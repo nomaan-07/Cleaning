@@ -1,14 +1,12 @@
 # 🌟 Cleaning Website
 
-<div style="display: flex; gap: 10px; align-items: center; justify-content: start;">
-  <p style="background-color: #E34C26; color:#fff; border-radius: 6px; display: flex; gap: 5px; align-items: center; justify-content: center; padding: 0 5px; height: 25px">HTML</p>
-  <p style="background-color: #264de4; color:#fff; border-radius: 6px; display: flex; gap: 5px; align-items: center; justify-content: center; padding: 0 5px; height: 25px">CSS</p>
-  <p style="background-color: yellow; color:#000; border-radius: 6px; display: flex; gap: 5px; align-items: center; justify-content: center; padding: 0 5px; height: 25px">JavaScript</p>
-</div>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 Welcome to the **Cleaning** website! This project showcases my web development skills using HTML, CSS, and JavaScript. It's thoughtfully designed as part of my resume to demonstrate my abilities.
 
-![logo](images/logos/cleaning-dark-logo.png)
+![Logo](images/logos/cleaning-dark-logo.png)
 
 ## Features ✨
 
@@ -47,8 +45,4 @@ Welcome to the **Cleaning** website! This project showcases my web development s
 
 2. **Open `index.html`** in your preferred web browser.
 
-## Live Demo 🌐
-
-[Cleaning.liara.run](https://cleaning.liara.run)
-
----
+## [Live Demo 🌐](https://cleaning.liara.run)
