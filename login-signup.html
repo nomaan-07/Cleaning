@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning | Login</title>
+    <link rel="icon" href="./images/logos/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/login-signup.css">
+</head>
+<body>
+    
+   
+<!-- SVGs -->
+<svg class="hidden">
+    <symbol id="arrow-left" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z" clip-rule="evenodd" />
+    </symbol>
+    <symbol id="eye" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    </symbol>
+    <symbol id="eye-slash" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+    </symbol>    
+</svg>
+
+
+
+
+<main class="main flex-center">
+    <a href="index.html" class="header__logo">
+        <img src="./images/logos/cleaning-logo.jpg" alt="logo" class="logo header__logo-picture">
+        <img src="./images/logos/cleaning-text.jpg" alt="logo text" class="logo header__logo-text">
+        <img src="./images/logos/cleaning-dark-logo.png" alt="logo" class="logo header__logo-picture header__logo--hidden">
+        <img src="./images/logos/cleaning-dark-text.png" alt="logo text" class="logo header__logo-text header__logo--hidden">
+    </a>
+    <div class="modal flex-center"></div>
+    <div class="wrapper">
+        <!-- Login, Sign Up, Forgot Password -->
+        <div class="wrapper__header">
+            <svg class="wrapper__header-icon hidden">
+                <use href="#arrow-left"></use>
+            </svg>
+            <h3 class="login__title">Login</h3>
+        </div>
+        
+        <!-- Login -->
+        <div class="login box-wrapper">
+            <div class="input-block">
+                <label for="login-email">Email</label>
+                <input type="email" class="email-input login__email-input" id="login-email" name="login-email">
+                <p class="error-text"></p>
+            </div>
+            <div class="input-block">
+                <label for="login-password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" class="password-input login__password-input" id="login-password" name="login-email">
+                    <p class="error-text"></p>
+                    <svg class="password-icon show-password">
+                        <use href="#eye"></use>
+                    </svg>
+                    <svg class="password-icon hide-password hidden">
+                        <use href="#eye-slash"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-block checkbox-block">
+                <div class="checkbox login__checkbox"></div>
+                <p class="checkbox__title">I agree to the <a href="blog.html?article=terms" class="checkbox__link">terms and conditions</a></p>
+                <p class="error-text"></p>
+            </div>
+                <div class="btn login__btn"><span>Login</span></div>
+            <div class="options">
+                <p class="options__signup">Sign up</p>
+                <p class="options__forgot">Forgot password</p>
+            </div>
+        </div>
+        <!-- Signup -->
+        <div class="signup box-wrapper hidden">
+            <div class="input-block">
+                <label for="signup-Username">Username</label>
+                <input type="text" class="Username-input signup__Username-input" id="signup-Username" name="signup-Username">
+                <p class="error-text"></p>
+            </div>
+            <div class="input-block">
+                <label for="signup-email">Email</label>
+                <input type="email" class="email-input signup__email-input" id="signup-email" name="signup-email">
+                <p class="error-text"></p>
+            </div>
+            <div class="input-block">
+                <label for="signup-password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" class="password-input signup__password-input" id="signup-password" name="signup-password">
+                    <p class="error-text"></p>
+                    <svg class="password-icon show-password">
+                        <use href="#eye"></use>
+                    </svg>
+                    <svg class="password-icon hide-password hidden">
+                        <use href="#eye-slash"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-block checkbox-block">
+                <div class="checkbox signup__checkbox"></div>
+                <p class="checkbox__title">I agree to the <a href="blog.html?article=terms" class="checkbox__link">terms and conditions</a></p>
+                <p class="error-text"></p>
+            </div>
+            <div class="btn signup__btn"><span>Sign up</span></div>
+            <div class="options">
+                <p class="options__login">Login</p>
+            </div>
+        </div>
+        <!-- Forgot -->
+        <div class="forgot box-wrapper hidden">
+            <div class="input-block">
+                <label for="forgot-email">Email</label>
+                <input type="email" class="email-input forgot__email-input" id="forgot-email" name="forgot-email">
+                <p class="error-text"></p>
+            </div>
+            <div class="btn forgot__btn"><span>Reset Password</span></div>
+            <div class="options">
+                <p class="options__signup">Sign up</p>
+                <p class="options__login">Login</p>
+            </div>
+        </div>
+        <!-- Verification -->
+        <div class="verification box-wrapper hidden">
+            <p>Code was sent to: <span class="verification__title"></span></p> 
+            <div class="verification__inputs-wrapper">
+                <input type="text" class="verification__input" pattern="[0-9]" maxlength="1" id="verification-input-1">
+                <input type="text" class="verification__input" pattern="[0-9]" maxlength="1" id="verification-input-2">
+                <input type="text" class="verification__input" pattern="[0-9]" maxlength="1" id="verification-input-3">
+                <input type="text" class="verification__input" pattern="[0-9]" maxlength="1" id="verification-input-4">
+                <input type="text" class="verification__input" pattern="[0-9]" maxlength="1" id="verification-input-5">
+            </div>
+            <p class="verification__text">send the code again</p>
+            <div class="btn verification__btn"><span>Confirm</span></div>
+        </div>
+        <!-- Change Password -->
+        <div class="change-password box-wrapper hidden">
+            <div class="input-block">
+                <label for="new-password">New Password</label>
+                <div class="password-wrapper">
+                    <input type="password" class="password-input new-password-input" id="new-password" name="new-password">
+                    <p class="error-text"></p>
+                    <svg class="password-icon show-password">
+                        <use href="#eye"></use>
+                    </svg>
+                    <svg class="password-icon hide-password hidden">
+                        <use href="#eye-slash"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-block">
+                <label for="confirm-password">Confirm Password</label>
+                <div class="password-wrapper">
+                    <input type="password" class="password-input confirm-password-input" id="confirm-password" name="confirm-password">
+                    <p class="error-text"></p>
+                    <svg class="password-icon show-password">
+                        <use href="#eye"></use>
+                    </svg>
+                    <svg class="password-icon hide-password hidden">
+                        <use href="#eye-slash"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="btn change-password__btn"><span>Reset Password</span></div>
+        </div>
+    </div>
+</main>
+
+
+
+<script src="./scripts/login-signup.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleaning | Change Booking</title>
+  <link rel="icon" href="./images/logos/favicon-32x32.png" type="image/png">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="./styles/service.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <link rel="stylesheet" href="./styles/book-detail.css">
+</head>
+
+<body>
+  <svg class="hidden">
+    <symbol id="arrow-left" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd"
+        d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z"
+        clip-rule="evenodd" />
+    </symbol>
+    <symbol id="calendar-days" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+    </symbol>
+    <symbol id="chevron-down" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </symbol>
+  </svg>
+
+  <main class="main">
+    <!-- Error Modal -->
+    <div class="modal flex-center"></div>
+
+    <div class="container">
+
+      <div class="header__buttons">
+        <div class="back__btn">
+          <svg class="back__btn-icon">
+            <use href="#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="btn cancel-btn"><span>Cancel Booking</span></div>
+      </div>
+
+      <div class="book-detail__title"></div>
+
+      <form action="#" class="book__form">
+        <input type="hidden" id="service__hidden-input" name="service" value="">
+        <!-- name -->
+        <div class="input__full-section">
+          <div class="input__section input__section--half">
+            <label for="first-name">First Name</label>
+            <input type="text" class="book-form__input" id="first-name" name="first-name">
+            <p class="input__error-text"></p>
+          </div>
+          <div class="input__section input__section--half">
+            <label for="last-name">Last Name</label>
+            <input type="text" class="book-form__input" id="last-name" name="last-name">
+            <p class="input__error-text"></p>
+          </div>
+        </div>
+        <!-- phone and email -->
+        <div class="input__full-section">
+          <div class="input__section input__section--half">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" class="book-form__input" id="phone-number" name="phone">
+            <p class="input__error-text"></p>
+          </div>
+          <div class="input__section input__section--half">
+            <label for="email">Email</label>
+            <input type="email" class="book-form__input" id="email" name="email">
+            <p class="input__error-text"></p>
+          </div>
+        </div>
+        <!-- calendar -->
+        <div class="input__section input__section--full">
+          <input type="hidden" id="date__hidden-input" name="date" value="">
+          <p class="select__title">Date</p>
+          <div class="select">
+            <div class="select__wrapper date__wrapper">
+              <p class="book-form__chosen">Pick a Date</p>
+              <svg class="select-icon calendar__icon">
+                <use href="#calendar-days"></use>
+              </svg>
+            </div>
+            <!-- calendar structure -->
+            <div class="calendar">
+              <div class="calendar__header">
+                <div class="calendar__year flex-center">2024</div>
+                <div class="calender__month-wrapper">
+                  <span class="calendar__chosen-month">May</span>
+                  <div class="calendar__months">
+                    <div class="calendar__month calendar__month--past" data-value="January">January</div>
+                    <div class="calendar__month calendar__month--past" data-value="February">February</div>
+                    <div class="calendar__month calendar__month--past" data-value="March">March</div>
+                    <div class="calendar__month calendar__month--past" data-value="April">April</div>
+                    <div class="calendar__month calendar__month--active" data-value="May">May</div>
+                    <div class="calendar__month calendar__month--active" data-value="June">June</div>
+                    <div class="calendar__month calendar__month--active" data-value="July">July</div>
+                    <div class="calendar__month calendar__month--active" data-value="August">August</div>
+                    <div class="calendar__month calendar__month--active" data-value="September">September</div>
+                    <div class="calendar__month calendar__month--active" data-value="October">October</div>
+                    <div class="calendar__month calendar__month--active" data-value="November">November</div>
+                    <div class="calendar__month calendar__month--active" data-value="December">December</div>
+                  </div>
+                  <div class="calendar_icon--wrapper flex-center">
+                    <svg class="calendar__icon">
+                      <use href="#chevron-down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar__body">
+                <div class="flex-center">Sun</div>
+                <div class="flex-center">Mon</div>
+                <div class="flex-center">Tue</div>
+                <div class="flex-center">Wed</div>
+                <div class="flex-center">Thu</div>
+                <div class="flex-center">Fri</div>
+                <div class="flex-center">Sat</div>
+                <div class="calendar__day-date">28</div>
+                <div class="calendar__day-date">29</div>
+                <div class="calendar__day-date">30</div>
+                <div class="calendar__day-date">1</div>
+                <div class="calendar__day-date">2</div>
+                <div class="calendar__day-date">3</div>
+                <div class="calendar__day-date">4</div>
+                <div class="calendar__day-date">5</div>
+                <div class="calendar__day-date">6</div>
+                <div class="calendar__day-date">7</div>
+                <div class="calendar__day-date">8</div>
+                <div class="calendar__day-date">9</div>
+                <div class="calendar__day-date">10</div>
+                <div class="calendar__day-date">11</div>
+                <div class="calendar__day-date">12</div>
+                <div class="calendar__day-date">13</div>
+                <div class="calendar__day-date">14</div>
+                <div class="calendar__day-date">15</div>
+                <div class="calendar__day-date">16</div>
+                <div class="calendar__day-date">17</div>
+                <div class="calendar__day-date">18</div>
+                <div class="calendar__day-date">19</div>
+                <div class="calendar__day-date">20</div>
+                <div class="calendar__day-date">21</div>
+                <div class="calendar__day-date">22</div>
+                <div class="calendar__day-date calendar__day-date--current-day calendar__day-date--current-month">
+                  23</div>
+                <div class="calendar__day-date calendar__day-date--current-month">24</div>
+                <div class="calendar__day-date calendar__day-date--current-month">25</div>
+                <div class="calendar__day-date calendar__day-date--current-month">26</div>
+                <div class="calendar__day-date calendar__day-date--current-month">27</div>
+                <div class="calendar__day-date calendar__day-date--current-month">28</div>
+                <div class="calendar__day-date calendar__day-date--current-month">29</div>
+                <div class="calendar__day-date calendar__day-date--current-month">30</div>
+                <div class="calendar__day-date calendar__day-date--current-month">31</div>
+                <div class="calendar__day-date">1</div>
+              </div>
+              <div class="calendar__btn btn"><span>Apply</span></div>
+            </div>
+          </div>
+          <p class="input__error-text"></p>
+        </div>
+        <!-- state and city -->
+        <div class="input__full-section">
+          <!-- State -->
+          <div class="input__section input__section--half">
+            <label for="state">State</label>
+            <input type="text" class="book-form__input" id="state" name="state">
+            <p class="input__error-text"></p>
+          </div>
+          <!-- City -->
+          <div class="input__section input__section--half">
+            <label for="city">City</label>
+            <input type="text" class="book-form__input" id="city" name="city">
+            <p class="input__error-text"></p>
+          </div>
+        </div>
+        <!-- apt and zip code -->
+        <div class="input__full-section">
+          <div class="input__section input__section--half">
+            <label for="apt">Apt-Suite</label>
+            <input type="text" class="book-form__input" id="apt" name="apt">
+            <p class="input__error-text"></p>
+          </div>
+          <div class="input__section input__section--half">
+            <label for="zip">Zip Code</label>
+            <input type="text" class="book-form__input" id="zip" name="zip">
+            <p class="input__error-text"></p>
+          </div>
+        </div>
+        <!-- Address -->
+        <div class="input__section input__section--full">
+          <label for="address">Address</label>
+          <input type="text" class="book-form__input" id="address" name="address">
+          <p class="input__error-text"></p>
+        </div>
+        <!-- plan -->
+        <div class="input__section">
+          <input type="hidden" id="selected-plan" name="plan" value="">
+          <p class="plan__title">Visit Frequency</p>
+          <div class="plans">
+            <div class="plan flex-center" data-value="One Time">One Time</div>
+            <div class="plan flex-center" data-value="Every One Month">Every One Month</div>
+            <div class="plan flex-center" data-value="Every Two Weeks">Every Two Weeks</div>
+            <div class="plan flex-center" data-value="Every Week">Every Week</div>
+          </div>
+        </div>
+        <!-- discount -->
+        <div class="input__section input__section--full">
+          <label for="discount">Discount Code</label>
+          <div class="discount__wrapper">
+            <input type="text" class="book-form__input discount__input" id="discount" name="discount">
+            <div class="discount__btn btn"><span>Apply</span></div>
+          </div>
+        </div>
+        <!-- price -->
+        <input type="hidden" id="price__hidden-input" name="price" value="990">
+        <p class="servic__price">Final Price: <span class="previous__price"></span> <span
+            class="service__price--number">990</span>$</p>
+        <!-- preferences -->
+        <div class="input__section input__section--preferences input__section--full">
+          <label for="preferences">Your Preferences</label>
+          <textarea class="book-form__preferences" name="preferences" id="preferences"
+            placeholder="Special Requests or Details"></textarea>
+        </div>
+        <!-- checkbox -->
+        <div class="input__section input__checkbox-section input__section--full">
+          <div class="book-form__checkbox"></div>
+          <p class="book-form__checkbox-title">I agree to the <a href="blog.html?article=terms"
+              class="form-book__Link">terms and conditions</a></p>
+          <p class="input__error-text"></p>
+        </div>
+        <div class="btn book-form__btn book-form__btn--apply"><span>Apply Changes</span></div>
+      </form>
+
+    </div>
+  </main>
+
+  <script src="./scripts/book-detail.js"></script>
+</body>
+
+</html>

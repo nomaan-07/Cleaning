@@ -1,0 +1,576 @@
+/* 
+
+===============
+-- Discover --
+===============
+
+*/
+
+/* 
+
+============
+-- About --
+============
+
+*/
+.about {
+  margin-top: 0;
+}
+.about-wrapper {
+  padding: 12rem 0;
+  justify-content: space-between;
+}
+.about__title {
+  width: 45%;
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+.about__caption {
+  width: 50%;
+}
+
+/* 
+
+============
+-- Stats --
+============
+
+*/
+
+.stats {
+  margin-top: 10rem;
+}
+.stats__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+.stats__img {
+  width: 60rem;
+  height: 50rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 1.2rem;
+}
+.stats__content {
+  width: 50%;
+}
+.stats__title,
+.team__title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+.static__caption,
+.team__caption {
+  margin-top: 2rem;
+}
+.stats-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.static-data__box {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 0.1rem solid var(--text-color);
+  overflow: hidden;
+  margin: 0 auto;
+}
+.static-data__wave {
+  position: absolute;
+  left: -50%;
+  height: 200%;
+  width: 200%;
+  transform: rotate(360deg);
+  animation: wave 8s linear infinite;
+  border-radius: 38%;
+}
+.static-data__wave--65 {
+  top: 35%;
+  background-color: var(--text-color);
+}
+
+.static-data__wave--43 {
+  top: 57%;
+  background-color: var(--primary-color);
+}
+
+.static-data__caption {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* 
+
+============
+-- Team --
+============
+
+*/
+.team {
+  margin-top: 10rem;
+  padding: 10rem 0;
+  background-color: var(--section-bg-color);
+  background-attachment: fixed;
+}
+
+.team__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.team__content {
+  width: 45%;
+}
+
+.team__caption {
+  margin-bottom: 2rem;
+}
+
+.team__btn {
+  width: 18rem;
+}
+.team__btn:hover {
+  color: var(--text-color);
+}
+
+.team__members {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.team__member {
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid var(--primary-color);
+}
+
+.team__img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.team__member-name {
+  font-family: "Poppins Bold";
+  font-size: 2rem;
+}
+
+.team__member-role {
+  font-family: "Poppins Medium";
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.team__member-description {
+  margin: 2rem 0;
+}
+
+.team__socials {
+  display: flex;
+  margin-top: 1rem;
+  gap: 2rem;
+  transition: var(--transition);
+}
+
+.team__social-link {
+  display: block;
+  width: 2.5rem;
+}
+
+.team__social-icon {
+  width: 100%;
+  height: 2.5rem;
+  fill: var(--text-color);
+  transition: var(--transition);
+}
+
+/* 
+
+============
+-- Journey --
+============
+
+*/
+
+.journey {
+  margin-top: 10rem;
+}
+
+.journey__title {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.journey__wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.journey-content {
+  width: 45%;
+}
+
+.journey-content__year {
+  font-size: 3rem;
+  font-family: "Poppins Bold";
+}
+
+.journey-content__title {
+  font-size: 3rem;
+  font-family: "Poppins Medium";
+  line-height: 1.2;
+  margin: 3rem 0;
+}
+
+.journey__caption {
+}
+
+.journey__img {
+  width: 50%;
+  box-shadow: var(--box-shadow);
+  border-radius: 1.2rem;
+}
+
+.journey__track {
+  position: relative;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.journey__line {
+  position: absolute;
+  height: 0.3rem;
+  bottom: 3.8rem;
+  border-radius: 10rem;
+  left: 0;
+}
+
+.journey__line--track {
+  width: 100%;
+  background-color: #eceff1;
+}
+.journey__line--active {
+  width: 10%;
+  background-color: var(--text-color) !important;
+  z-index: 1;
+  transition: var(--transition-2x);
+}
+
+.journey__year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.journey__year-shape {
+  background-color: #eceff1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  position: relative;
+  z-index: 2;
+  border: 0.4rem solid var(--secondary-color);
+}
+
+.journey__year-number {
+  font-family: "Poppins Bold";
+}
+
+.dark .journey__line,
+.dark .journey__year-shape {
+  background-color: #37474f;
+}
+
+.journey__year-shape--active {
+  background-color: var(--text-color) !important;
+}
+
+/* 
+
+================
+-- Comment --
+================
+
+*/
+
+.comments {
+  margin-top: 16rem;
+}
+
+/* 
+
+================
+-- Keyframes --
+================
+
+*/
+
+@keyframes wave {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* 
+
+====================
+-- Responsive --
+====================
+
+*/
+@media screen and (max-width: 1400px) {
+  .stats__img {
+    width: 50rem;
+    height: 45rem;
+  }
+  .journey-content__title {
+    font-size: 2.5rem;
+    height: 9rem;
+  }
+  .journey__caption {
+    height: 19.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .stats__img {
+    width: 40rem;
+    height: 35rem;
+  }
+  .team {
+    padding: 8rem 0;
+  }
+  .journey-content__title {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about__title,
+  .about__caption,
+  .stats__img,
+  .stats__content,
+  .team__content,
+  .journey-content {
+    width: 100%;
+    height: auto;
+  }
+  .stats {
+    margin-top: 4rem;
+  }
+
+  .stats__wrapper,
+  .journey__wrapper {
+    flex-direction: column;
+  }
+  .stats__content {
+    margin-top: 2rem;
+  }
+  .stats-data {
+    margin-top: 2rem;
+  }
+
+  .team__img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .team__member-name {
+    font-size: 1.8rem;
+  }
+  .team__member-role {
+    font-size: 1.6rem;
+  }
+  .team__member-description {
+    margin: 1rem 0;
+  }
+  .team__socials {
+    gap: 1rem;
+  }
+  .team__social-link {
+    width: 2.2rem;
+  }
+  .team__social-icon {
+    height: 2.2rem;
+  }
+
+  .journey__title,
+  .journey-content {
+    margin-bottom: 4rem;
+  }
+
+  .journey-content__year {
+    text-align: center;
+  }
+  .journey-content__title {
+    height: 6rem;
+    text-align: center;
+  }
+  .journey__caption {
+    height: 12rem;
+    -webkit-line-clamp: 5;
+  }
+
+  .journey__img {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .journey__track {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    padding: 8rem 0;
+  }
+  .static-data__box {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .team {
+    padding: 6rem 0;
+    margin-top: 8rem;
+  }
+  .team__wrapper {
+    flex-direction: column;
+  }
+  .team__members {
+    margin-top: 6rem;
+    width: 100%;
+  }
+  .team__img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .team__member-name {
+    font-size: 1.6rem;
+  }
+  .team__member-description,
+  .journey__caption {
+    font-size: 1.4rem;
+  }
+
+  .journey {
+    margin-top: 8rem;
+  }
+  .journey__title {
+    margin-bottom: 2rem;
+  }
+  .journey-content {
+    margin-bottom: 3rem;
+  }
+
+  .journey-content__year {
+    font-size: 2.5rem;
+  }
+  .journey-content__title {
+    margin-top: 1rem;
+    height: 4.8rem;
+    font-size: 2rem;
+  }
+  .journey__caption {
+    height: 14.7rem;
+    -webkit-line-clamp: 7;
+  }
+
+  .journey__img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-wrapper {
+    padding: 6rem 0;
+  }
+  .static__caption,
+  .static-data__caption,
+  .team__caption {
+    font-size: 1.4rem;
+  }
+  .team {
+    padding-bottom: 4rem;
+  }
+  .journey-content {
+    margin-bottom: 3rem;
+  }
+  .journey__img {
+    width: 100%;
+  }
+
+  .journey-content__year {
+    font-size: 2rem;
+  }
+
+  .journey-content__title {
+    height: 7.2rem;
+    margin-bottom: 1rem;
+  }
+  .journey__caption {
+    height: 16.8rem;
+    -webkit-line-clamp: 8;
+  }
+
+  .comments {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .stats-data {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team__btn {
+    width: 100%;
+  }
+  .journey-content {
+    margin-bottom: 2rem;
+  }
+
+  .journey-content__title {
+    height: 8.6rem;
+    -webkit-line-clamp: 4;
+    font-size: 1.8rem;
+  }
+  .journey__caption {
+    height: 20.9rem;
+    -webkit-line-clamp: 10;
+  }
+}

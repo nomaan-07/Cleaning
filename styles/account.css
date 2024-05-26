@@ -1,0 +1,632 @@
+.container {
+  overflow: visible;
+}
+
+.header {
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.header__text {
+  font-size: 3rem;
+}
+.username {
+  font-size: 3.5rem;
+  font-family: "Poppins Bold", sans-serif;
+  color: var(--primary-color);
+}
+
+/* 
+
+===========
+-- Main --
+===========
+
+*/
+.main {
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.modal {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--box-shadow);
+  width: 30rem;
+  height: 15rem;
+  border-radius: 1.2rem;
+  border: 0;
+  font-size: 2.5rem;
+  font-family: "Poppins Medium";
+  background-color: var(--bg-color);
+  animation: fade 3s ease;
+  transition: var(--transition-2x);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+.dark .modal {
+  background-color: var(--section-bg-color);
+}
+.modal--succeed {
+  border-bottom: 1rem solid #26a69a;
+  border-top: 1rem solid #26a69a;
+  color: #26a69a;
+}
+
+.dark .modal--succeed {
+  border-bottom: 1rem solid #4db6ac;
+  border-top: 1rem solid #4db6ac;
+  color: #b2ebf2;
+}
+.modal--failed {
+  border-bottom: 1rem solid #f50057;
+  border-top: 1rem solid #f50057;
+  color: #f50057;
+}
+
+.dark .modal--failed {
+  border-bottom: 1rem solid #ff4081;
+  border-top: 1rem solid #ff4081;
+  color: #ff4081;
+}
+
+.modal--fade {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main__text {
+  display: none;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 12rem;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.main__text span {
+  display: block;
+}
+.main__wrapper {
+  margin-top: 14rem;
+}
+.back__btn {
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+.back__btn-icon {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* 
+
+==================
+-- Main Content --
+==================
+
+*/
+
+.main-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-content__box {
+  width: 50%;
+  box-shadow: var(--box-shadow);
+  border-radius: 1.2rem;
+  padding: 2rem 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  transition-delay: 100ms;
+  gap: 2rem;
+  font-size: 2.5rem;
+}
+.dark .main-content__box {
+  background-color: var(--section-bg-color);
+  box-shadow: none;
+}
+.main-content__box:hover {
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.24);
+}
+.dark .main-content__box:hover {
+  box-shadow: 0 0.2rem 0.8rem rgba(255, 255, 255, 0.1);
+}
+
+.main-content__icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* 
+
+==============
+-- Account --
+==============
+
+*/
+.account__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.section-wrapper {
+  box-shadow: var(--box-shadow);
+  border-radius: 1.2rem;
+  padding: 1rem 2rem;
+}
+.dark .section-wrapper {
+  box-shadow: none;
+  background-color: var(--section-bg-color);
+}
+
+.account__title,
+.bookings__title {
+  font-size: 3rem;
+  font-family: "Poppins Bold", sans-serif;
+  border-bottom: 0.1rem solid var(--primary-color);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  font-size: 1.8rem;
+  font-family: "Poppins Bold", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  outline: none;
+  border: 0.1rem solid var(--text-color);
+  background-color: var(--bg-color);
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
+  color: var(--text-color);
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 4rem;
+  font-size: 1.4rem;
+}
+.dark input {
+  background-color: var(--section-bg-color);
+}
+
+input:focus {
+  border: 0.1rem solid var(--primary-color);
+}
+.error-text {
+  position: absolute;
+  bottom: -2rem;
+  font-size: 1.4rem;
+  color: #d81b60;
+}
+.dark .error-text {
+  color: #ef5350;
+}
+.input-block {
+  position: relative;
+}
+
+.inputs-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+.input__section-half {
+  width: 50%;
+}
+
+.change-detail__btn,
+.change-password__btn {
+  margin: 4rem auto 2rem;
+  width: 18rem;
+}
+
+.passwords__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.password-wrapper {
+  border: 0.1rem solid var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+.dark .password-wrapper {
+  background-color: var(--section-bg-color);
+}
+.password-wrapper:focus-within {
+  border-color: var(--primary-color);
+}
+.password-input {
+  border: none;
+  height: 3.8rem;
+}
+.password-input:focus {
+  border: none;
+}
+.password-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+/* 
+
+=============
+-- Booking --
+=============
+
+*/
+/* no booking */
+.no-booking__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-radius: 1.2rem;
+}
+.no-booking__text {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 3rem;
+}
+.no-booking__btn,
+.book__btn {
+  width: 18rem;
+}
+/* booking */
+.bookings__title {
+  text-align: center;
+  border-bottom: none;
+}
+table {
+  width: 100%;
+}
+th,
+td {
+  font-size: 1.8rem;
+  text-align: center;
+}
+th {
+  padding: 1rem 0.5rem;
+  font-family: "Poppins Bold", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+td {
+  font-family: "Poppins Medium", sans-serif;
+  padding: 2rem 0.5rem;
+}
+
+.book__detail {
+  border-bottom: 0.1rem solid var(--primary-color);
+  cursor: pointer;
+  transition: var(--transition);
+  transition-delay: 100ms;
+}
+.book__detail:hover {
+  /* color: var(--secondary-color); */
+  background-color: #2674a620;
+}
+.dark .book__detail:hover {
+  /* color: var(--secondary-color); */
+  background-color: #cbefff20;
+}
+.book__situation,
+.mobile-book__situation {
+  color: #fff;
+}
+
+.book__situation--complete {
+  background-color: #26a69a;
+}
+.dark .book__situation--complete {
+  background-color: #4db6ac;
+}
+.book__situation--in-order {
+  background-color: #e7cb15;
+}
+
+
+.book__situation--canceled {
+  background-color: #f50057;
+}
+.dark .book__situation--canceled {
+  background-color: #ff4081;
+}
+
+.book__delete-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* mobile book */
+.mobile-books {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.mobile-book {
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 1rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+}
+.dark .mobile-book {
+  box-shadow: none;
+  background-color: var(--section-bg-color);
+}
+.mobile-book__name {
+  text-align: center;
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 2rem;
+}
+.mobile-book__item {
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 1.8rem;
+}
+.mobile-book__item span {
+  font-family: "Poppins";
+}
+.mobile-book__item--price {
+}
+.mobile-book__btn {
+}
+.mobile-book__situation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15rem;
+  transform: rotate(45deg) translateX(30px) translateY(-47px);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 6rem;
+  z-index: 2;
+}
+.book__number {
+  width: 1rem;
+}
+.book__number span {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: 'Poppins Medium';
+  width: 2.3rem;
+  height: 2.3rem;
+  font-size: 1.4rem;
+  border-radius: 100%
+}
+
+.mobile-book__number {
+  position: absolute;
+  top: 1.2rem;
+  left: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: 'Poppins Bold';
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 100%;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 114rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 96rem;
+  }
+  .header__login-submenu--wrapper {
+    top: 5rem;
+  }
+  .account__title,
+  .bookings__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 72rem;
+  }
+  .header-wrapper {
+    padding-top: 0;
+  }
+  .header__text,
+  .book__table {
+    display: none;
+  }
+  .main__text {
+    display: flex;
+  }
+  .username {
+    font-size: 3rem;
+  }
+
+  .main__wrapper {
+    margin-top: 4rem;
+  }
+  .main-content__box {
+    font-size: 2.2rem;
+  }
+  .main-content__icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .account__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .inputs-wrapper {
+    flex-direction: column;
+  }
+  .input__section-half,
+  .change-detail__btn,
+  .change-password__btn {
+    width: 100%;
+  }
+  .mobile-books {
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 54rem;
+  }
+  *,
+  *::after,
+  *::before {
+    cursor: default !important;
+  }
+  .header__login-submenu-btn:hover,
+  .dark .header__login-submenu-btn:hover {
+    background-color: inherit;
+  }
+
+  .main-content__box:hover {
+    box-shadow: var(--box-shadow);
+  }
+  .dark .main-content__box:hover {
+    box-shadow: 0 0.3rem 0.8rem rgba(255, 255, 255, 0.15);
+  }
+  .btn:hover {
+    color: var(--secondary-color);
+  }
+  .btn::before,
+  .btn::after {
+    display: none;
+  }
+  .header {
+    padding-bottom: 0.5rem;
+  }
+  .header-wrapper {
+    align-items: end;
+  }
+  .header-menu {
+    margin-bottom: 0.5rem;
+  }
+  .header__login-submenu-btn {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+
+  .main-content__box {
+    gap: 1rem;
+  }
+  .main-content__box {
+    font-size: 2rem;
+  }
+  .main-content__icon {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .account__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .section-wrapper,
+  .mobile-book {
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .back__btn {
+    width: 35rem;
+    margin: 0 auto 2rem;
+  }
+  .no-booking__wrapper {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .mobile-books {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  .header__logo-text {
+    display: none;
+  }
+  .header__user {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .header__theme-icon,
+  .header__user-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+  .main-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main-content__box {
+    justify-content: start;
+    width: 28rem;
+  }
+  .main-content__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-menu {
+    gap: 3rem;
+  }
+  label {
+    font-size: 1.6rem;
+  }
+  .section-wrapper,
+  .no-booking__btn,
+  .mobile-book {
+    width: 100%;
+  }
+  .account__title,
+  .bookings__title {
+    font-size: 2.2rem;
+  }
+  .mobile-book__situation {
+    transform: rotate(45deg) translateX(31px) translateY(-53px);
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main-content__box {
+    width: 100%;
+  }
+  .error-text {
+    font-size: 1.2rem;
+  }
+}

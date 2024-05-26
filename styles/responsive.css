@@ -1,0 +1,523 @@
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 114rem;
+  }
+  .home__shape {
+    bottom: -4.8rem;
+  }
+  .about-info {
+    gap: 8rem;
+  }
+
+  .comment-info {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+
+  .comment__description {
+    height: 9.6rem;
+    -webkit-line-clamp: 4;
+  }
+
+  .companies__wrapper {
+    column-gap: 6rem;
+  }
+
+  .company {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 96rem;
+  }
+  .header-menu {
+    gap: 3.5rem;
+  }
+  .header-menu__item,
+  .header-menu__btn {
+    font-size: 1.4rem;
+  }
+  .header__user {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .header__theme-icon,
+  .header__user-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .home__shape {
+    bottom: -5.3rem;
+  }
+  .about-info {
+    gap: 6rem;
+  }
+  .about-info__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .offer {
+    padding-top: 8rem;
+  }
+
+  .offer-box {
+    width: 25.5rem;
+  }
+  .offer-box__images {
+    width: 20rem;
+    height: 16rem;
+  }
+  .offer-box__title,
+  .footer__title {
+    font-size: 1.8rem;
+  }
+  .offer-box__info {
+    margin-bottom: 1rem;
+  }
+
+  .comment-info__name {
+    font-size: 1.6rem;
+  }
+  .comment__description {
+    height: 7.2rem;
+    -webkit-line-clamp: 3;
+  }
+
+  .translateX20 {
+    transform: translateX(15rem);
+  }
+  .translateX-20 {
+    transform: translateX(-15rem);
+  }
+  .translateY10 {
+    transform: translateY(8rem);
+  }
+  .translateY-10 {
+    transform: translateY(-8rem);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 72rem;
+  }
+  .header-wrapper {
+    width: 98%;
+    padding: 0.5rem 0.5rem 0;
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+  .header__logo-text {
+    display: none;
+  }
+  .header-menu {
+    gap: 2rem;
+  }
+  .header__user {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .header__theme-icon,
+  .header__user-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .main {
+    margin-top: 8.5rem;
+  }
+  .section__title {
+    font-size: 3.5rem;
+  }
+  .home {
+    height: 60rem;
+  }
+  .home-wrapper {
+    gap: 2rem;
+  }
+  .home__title {
+    font-size: 4.5rem;
+    width: 52rem;
+  }
+
+  .home__btn {
+    width: 24rem;
+  }
+  .home__shape {
+    bottom: -5.8rem;
+  }
+
+  .discover__wrapper {
+    height: 35rem;
+  }
+  .discover__caption {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about__content,
+  .about__image {
+    width: 100%;
+  }
+
+  .about-info {
+    gap: 3rem;
+  }
+  .about-info__icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .about-info__title {
+    font-size: 1.6rem;
+  }
+  .about__contact {
+    font-size: 1.4rem;
+    width: 17rem;
+  }
+
+  .comment__description {
+    height: 12rem;
+    -webkit-line-clamp: 6;
+  }
+  .comments-btns__btn {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .comments-btns__btn svg {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .companies__wrapper {
+    column-gap: 4rem;
+  }
+
+  .company {
+    width: 14rem;
+    height: 14rem;
+  }
+  .footer {
+    margin-top: 2rem;
+    padding-top: 4rem;
+  }
+
+  .translateX20 {
+    transform: translateX(10rem);
+  }
+  .translateX-20 {
+    transform: translateX(-10rem);
+  }
+  .translateY10 {
+    transform: translateY(6rem);
+  }
+  .translateY-10 {
+    transform: translateY(-6rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 54rem;
+  }
+  *,
+  *::after,
+  *::before {
+    cursor: default !important;
+  }
+
+  .btn::after,
+  .btn::before,
+  .header,
+  .main-slogan,
+  .home__shape,
+  .about-info__box::after,
+  .about-info__box::before {
+    display: none;
+  }
+  .header__login-submenu-btn:hover,
+  .header__logout-btn:hover,
+  .dark .header__login-submenu-btn:hover,
+  .dark .header__logout-btn:hover {
+    background-color: inherit;
+  }
+  .btn:hover {
+    color: var(--secondary-color);
+  }
+  .offer-box__images:hover .offer-box__image--hover {
+    opacity: 0;
+  }
+  .footer__link:hover,
+  .footer-address__detail:hover {
+    color: var(--text-color);
+  }
+  .footer-social__icon:hover {
+    fill: var(--text-color);
+  }
+
+  .header__login-submenu-btn {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  .dark .header__login-submenu-btn {
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+  }
+  .nav {
+    display: block;
+  }
+  .main {
+    margin-top: 8.4rem;
+  }
+  .section__title {
+    font-size: 3rem;
+  }
+  .home {
+    height: 40rem;
+  }
+  .home__title {
+    font-size: 4rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .home__btn {
+    width: 20rem;
+  }
+
+  .discover__caption {
+    font-size: 1.6rem;
+  }
+
+  .about-info {
+    gap: 2rem;
+  }
+  .about-info__box {
+    padding: 1rem;
+  }
+  .about-info__box:hover {
+    color: var(--secondary-color) !important;
+  }
+  .about-info__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .about-info__title {
+    font-size: 1.4rem;
+  }
+
+  .offer {
+    padding-top: 6rem;
+  }
+  .offer-box {
+    width: 23.5rem;
+  }
+  .offer-box__title,
+  .footer__title {
+    font-size: 1.6rem;
+  }
+  .offer-box__description {
+    font-size: 1.4rem;
+    height: 6.3rem;
+  }
+  .offer-box__price,
+  .footer__description,
+  .footer__copy-right {
+    font-size: 1.4rem;
+  }
+  .box__star {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .comment-info {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  .comment__description {
+    font-size: 1.4rem;
+    height: 12.6rem;
+  }
+
+  .companies__wrapper {
+    column-gap: 6rem;
+  }
+
+  .company {
+    width: 12rem;
+    height: 12rem;
+    filter: brightness(100%);
+  }
+  .dark .company {
+    filter: brightness(125%);
+  }
+
+  .footer-address__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .footer-social__link {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .translateX20 {
+    transform: translateX(10rem);
+  }
+  .translateX-20 {
+    transform: translateX(-10rem);
+  }
+  .translateY10 {
+    transform: translateY(4rem);
+  }
+  .translateY-10 {
+    transform: translateY(-4rem);
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  .mobile-header__slogan {
+    letter-spacing: 1rem;
+    font-size: 1.4rem;
+  }
+  .main {
+    margin-top: 8.1rem;
+  }
+  .section__title {
+    font-size: 2.5rem;
+  }
+  .main-slogan__text {
+    margin-left: 1rem;
+  }
+  .main-slogan__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .home {
+    height: 40rem;
+  }
+  .home__title {
+    font-size: 3.5rem;
+  }
+  .home__btn {
+    width: 100%;
+  }
+
+  .discover__caption {
+    margin-top: 1rem;
+    max-width: 30rem;
+    text-align: center;
+  }
+
+  .about__caption {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  .offer {
+    padding: 4rem 0;
+  }
+  .offer__title {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .comment-info {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+  .comment__description {
+    font-size: 1.4rem;
+    height: 8.3rem;
+    -webkit-line-clamp: 4;
+  }
+  .comments-btns {
+    margin-top: 2rem;
+  }
+
+  .companies {
+    margin-top: 10rem;
+  }
+
+  .translateX20,
+  .translateX-20,
+  .translateY10,
+  .translateY-10 {
+    transition: all 750ms ease-out;
+  }
+  .translateX20 {
+    transform: translateX(6rem);
+  }
+  .translateX-20 {
+    transform: translateX(-6rem);
+  }
+  .translateY10 {
+    transform: translateY(2rem);
+  }
+  .translateY-10 {
+    transform: translateY(-2rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-header__logo {
+    gap: 0.5rem;
+  }
+  .mobile-header__logo-picture {
+    width: 4rem;
+    height: 5rem;
+  }
+  .mobile-header__slogan {
+    letter-spacing: 0.5rem;
+    top: 5rem;
+  }
+  .main {
+    margin-top: 7.1rem;
+  }
+  .main-slogan__text {
+    margin-left: 0.5rem;
+  }
+  .home {
+    height: 35rem;
+  }
+  .home__word {
+    display: block;
+  }
+  .home__btns {
+    width: 100%;
+  }
+
+  .offer__title {
+    margin-bottom: 4rem;
+  }
+  .offer-wrapper {
+    gap: 3rem;
+  }
+  .offer-box {
+    width: 100%;
+  }
+  .offer-box__images {
+    width: 100%;
+    height: 20rem;
+    margin-top: 1rem;
+  }
+}

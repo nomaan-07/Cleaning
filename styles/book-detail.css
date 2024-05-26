@@ -1,0 +1,107 @@
+.main {
+  margin: 0 0 4rem !important;
+}
+.modal {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--box-shadow);
+  width: 30rem;
+  height: 15rem;
+  border-radius: 1.2rem;
+  border: 0;
+  font-size: 2.5rem;
+  font-family: "Poppins Medium";
+  background-color: var(--bg-color);
+  animation: fade 3s ease;
+  transition: var(--transition-2x);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+.dark .modal {
+  background-color: var(--section-bg-color);
+}
+.modal--succeed {
+  border-bottom: 1rem solid #26a69a;
+  border-top: 1rem solid #26a69a;
+  color: #26a69a;
+}
+
+.dark .modal--succeed {
+  border-bottom: 1rem solid #4db6ac;
+  border-top: 1rem solid #4db6ac;
+  color: #b2ebf2;
+}
+.modal--failed {
+  border-bottom: 1rem solid #f50057;
+  border-top: 1rem solid #f50057;
+  color: #f50057;
+}
+
+.dark .modal--failed {
+  border-bottom: 1rem solid #ff4081;
+  border-top: 1rem solid #ff4081;
+  color: #ff4081;
+}
+
+.modal--fade {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__buttons {
+  margin: 4rem auto 0;
+  width: 69.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back__btn {
+}
+.back__btn-icon {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.cancel-btn {
+  background-color: #f50057;
+  border-color: #f50057;
+  width: 18rem;
+}
+.dark .cancel-btn {
+  background-color: #ff4081;
+  border-color: #ff4081;
+  color: #fff;
+}
+
+
+.book-detail__title {
+    font-size: 4rem;
+    font-family: "Poppins Bold", sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.book__form {
+  margin-top: 0;
+}
+
+.book-form__btn {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .header__buttons {
+      width: 100%;
+  }
+  .book-detail__title {
+    font-size: 3.5rem;
+  }
+}

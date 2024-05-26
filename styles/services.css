@@ -1,0 +1,200 @@
+/* 
+
+============
+-- Discover
+============
+
+*/
+
+.discover {
+  background-image: url("../images/disinfecting-home.jpg");
+}
+
+/* 
+
+==============
+-- Services --
+==============
+
+*/
+
+.services {
+  background-color: transparent;
+}
+
+.service-box {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.box__star {
+  color: #2d3e50;
+  fill: transparent;
+}
+.dark .box__star {
+  color: #2d3e50;
+}
+.box__star--active {
+  fill: #fbc02d;
+}
+
+.service__btn {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: solid 0.1rem var(--secondary-color);
+}
+.service__btn:hover {
+  color: var(--secondary-color);
+}
+
+.service__btn::after,
+.service__btn::before {
+  background-color: var(--primary-color);
+}
+
+/* 
+
+===============
+-- FAQs --
+===============
+
+*/
+
+.faqs {
+}
+.faqs__title,
+.faqs__more {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.faqs__caption {
+  text-align: center;
+  font-size: 2rem;
+}
+.faqs__wrapper {
+  margin: 6rem auto;
+  width: 69.6rem;
+}
+
+.faqs-box {
+  border-radius: 1.2rem;
+  background-color: var(--section-bg-color);
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.faqs-box:last-child {
+  margin-bottom: 0;
+}
+.faqs-box__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.faqs-box__title,
+.faqs__more {
+  font-family: "Poppins Bold";
+  font-size: 1.8rem;
+}
+.fax-box__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid var(--text-color);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.fax-box__icon {
+  width: 2rem;
+  height: 2rem;
+}
+.faqs-boxs__caption {
+  transition: all 150ms ease;
+  height: 0;
+  opacity: 0;
+}
+.faqs-boxs__caption--open {
+  border-top: 0.1rem solid var(--text-color);
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  height: auto;
+  opacity: 1;
+}
+
+.faqs__more {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.faqs__btn {
+  width: 18rem;
+  margin: 0 auto;
+}
+
+/* 
+
+===============
+-- Companies --
+===============
+
+*/
+
+.companies {
+  margin-top: 16rem;
+}
+
+/* 
+
+===============
+-- Responsive --
+===============
+
+*/
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+  .faqs__caption {
+    font-size: 1.8rem;
+  }
+  .faqs__wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faqs__caption,
+  .faqs-box__title,
+  .faqs__more {
+    font-size: 1.6rem;
+  }
+  .faqs-box {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .faqs__wrapper {
+    margin: 4rem auto;
+  }
+  .faqs-boxs__caption {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 400px) {
+  .faqs-box__title,
+  .faqs__more {
+    font-size: 1.4rem;
+  }
+  .faqs__btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,84 @@
+.main {
+  margin-top: 0 !important;
+}
+.wrapper {
+  flex-direction: column;
+  height: 100vh;
+}
+.page-404-icon__wrapper {
+  width: 75rem;
+}
+.page-404-icon {
+  width: 100%;
+  height: 100%;
+}
+.page-404-icon__background {
+  color: var(--primary-color);
+  opacity: 0.18;
+}
+.page-404-icon__number-shadow,
+.page-404-icon__shirt-shadow,
+.page-404-icon__head-shadow,
+.page-404-icon__arm-shadow {
+  color: #2d3e50;
+}
+
+.page-404-icon__number,
+.page-404-icon__shirt,
+.page-404-icon__arm {
+  color: var(--primary-color);
+}
+.page-404-icon__head-shadow,
+.page-404-icon__arm-shadow {
+  transform: translateX(-1px);
+}
+.page-404-icon__arm-shadow {
+  transform: translateX(-1px);
+}
+
+.page-404-icon__face,
+.page-404-icon__hand {
+  color: #edcbbd;
+}
+.page-404-icon__hair {
+  color: #23120b;
+}
+.page-404-icon__ear-shadow,
+.page-404-icon__neck-shadow {
+  color: #d3b2a3;
+}
+
+.main__text {
+  font-family: "Poppins Bold";
+  font-size: 6rem;
+  margin: 2rem 0;
+}
+.btn {
+  width: 28rem;
+}
+
+@media screen and (max-width: 992px) {
+  .page-404-icon__wrapper {
+    width: 100%;
+  }
+  .main__text {
+    font-size: 5rem;
+  }
+  .btn {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__text {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__text {
+    font-size: 3rem;
+  }
+  .btn {
+    width: 100%;
+  }
+}
