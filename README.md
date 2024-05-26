@@ -45,4 +45,7 @@ Welcome to the **Cleaning** website! This project showcases my web development s
 
 2. **Open `index.html`** in your preferred web browser.
 
-## [Live Demo 🌐](https://cleaning.liara.run)
+## Live Demos 🌐
+
+- [Cleaning (github)](https://nomaan-07.github.io/cleaning)
+- [Cleaning (liara)](https://cleaning.liara.run)
