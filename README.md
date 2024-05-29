@@ -47,5 +47,5 @@ Welcome to the **Cleaning** website! This project showcases my web development s
 
 ## Live Demos 🌐
 
-- [Cleaning (github)](https://nomaan-07.github.io/cleaning)
+- [Cleaning (github)](https://nomaan-07.github.io/Cleaning)
 - [Cleaning (liara)](https://cleaning.liara.run)
