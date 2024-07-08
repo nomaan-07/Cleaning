@@ -1,3 +1,5 @@
+import './shared.js'
+
 const journeyContent = [
   {
     year: 2020,
