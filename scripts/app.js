@@ -47,45 +47,7 @@ if (localStorage.getItem("isLoggedIn") === "true") {
 
 if (localStorage.getItem("theme") === "dark") applyDarkTheme();
 
-// Intersection Observer
-function observerHandler(entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("observe");
-    }
-  });
-}
 
-const observerClasses = `
-    .about__image, .section__title, .about__caption, .offer, .comments-wrapper,
-    .companies__wrapper, .home__title, .discover__caption, .stats__img, .stats-data,
-    .static__caption ,.home__btns, .team__caption, .team__btn, .team__members, .journey-content,
-    .journey__img, .journey__track, .service-box, .faqs__wrapper, .faqs__more, .faqs__btn,
-    .contact__caption, .contact__info, .contact-img__wrapper, .contact-form__caption, .contact__form,
-    .detail-images, .detail-service, .book__caption, .book__form`;
-
-const elementsToObserve = document.querySelectorAll(observerClasses);
-
-const observer = new IntersectionObserver(observerHandler, { threshold: 0.1 });
-
-function observeElement(element) {
-  if (element) {
-    observer.observe(element);
-  }
-}
-
-function initObserver() {
-  elementsToObserve.forEach(observeElement);
-}
-
-// Fallback for browsers without IntersectionObserver support
-if ("IntersectionObserver" in window) {
-  initObserver();
-} else {
-  elementsToObserve.forEach((el) => {
-    el.classList.add("observe");
-  });
-}
 
 function removeTransitionBeforeChangeTheme() {
   allElements.forEach((el) => el.classList.add("no-transition"));
