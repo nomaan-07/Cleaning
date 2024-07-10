@@ -31,45 +31,44 @@ const journeyContent = [
   },
 ];
 
-const journeyTrackLine = document.querySelector(".journey__line--active");
-const journeyButtons = document.querySelectorAll(".journey__year");
-const journeyActiveElements = document.querySelectorAll(".journey__year-shape");
-const journeyYear = document.querySelector(".journey-content__year");
-const journeyTitle = document.querySelector(".journey-content__title");
-const journeyCaption = document.querySelector(".journey__caption");
-const journeyImage = document.querySelector(".journey__img");
-const journeyShapes = document.querySelectorAll(".journey__year-shape");
-const journeyActiveLine = document.querySelector(".journey__line--active");
+const journeyTrackLine = document.querySelector('.journey__line--active');
+const journeyButtons = document.querySelectorAll('.journey__year');
+const journeyActiveElements = document.querySelectorAll('.journey__year-btn');
+const journeyYear = document.querySelector('.journey-content__year');
+const journeyTitle = document.querySelector('.journey-content__title');
+const journeyCaption = document.querySelector('.journey__caption');
+const journeyImage = document.querySelector('.journey__img');
+const journeyShapes = document.querySelectorAll('.journey__year-btn');
+const journeyActiveLine = document.querySelector('.journey__line--active');
 
-function journeyContentHandler(btn) {
-  let currentElemYear = +btn.children[1].innerText;
+function journeyContentHandler(event) {
+  if (event.target.dataset.year) {
+    let currentYear = Number(event.target.dataset.year);
+    let chosenYear = null;
+    journeyShapes.forEach((btn) => {
+      chosenYear = Number(btn.dataset.year);
+      if (chosenYear > currentYear) {
+        btn.classList.remove('journey__year-btn--active');
+      } else {
+        btn.classList.add('journey__year-btn--active');
+      }
+    });
 
-  journeyShapes.forEach((shape) => {
-    let shapeElemYear = +shape.nextElementSibling.innerText;
-    if (shapeElemYear > currentElemYear) {
-      shape.classList.remove("journey__year-shape--active");
+    let userSelectedJourney = journeyContent.find((journey) => {
+      return journey.year === currentYear;
+    });
+
+    journeyYear.innerText = userSelectedJourney.year;
+    journeyTitle.innerText = userSelectedJourney.title;
+    journeyCaption.innerText = userSelectedJourney.caption;
+    journeyImage.setAttribute('src', userSelectedJourney.imageSrc);
+
+    if (currentYear === 2024) {
+      journeyActiveLine.style.width = `100%`;
     } else {
-      shape.classList.add("journey__year-shape--active");
+      journeyActiveLine.style.width = `${10 + (currentYear - 2020) * 20}%`;
     }
-  });
-
-  let userSelectedJourney = journeyContent.find((journey) => {
-    return journey.year === currentElemYear;
-  });
-
-  journeyYear.innerText = userSelectedJourney.year;
-  journeyTitle.innerText = userSelectedJourney.title;
-  journeyCaption.innerText = userSelectedJourney.caption;
-  journeyImage.src = userSelectedJourney.imageSrc;
-  if (currentElemYear === 2024) {
-    journeyActiveLine.style.width = `100%`;
-  } else {
-    journeyActiveLine.style.width = `${10 + (currentElemYear - 2020) * 20}%`;
   }
 }
 
-journeyButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    journeyContentHandler(btn);
-  });
-});
+journeyButtons.forEach((btn) => btn.addEventListener('click', journeyContentHandler));

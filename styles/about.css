@@ -278,7 +278,7 @@
   cursor: pointer;
 }
 
-.journey__year-shape {
+.journey__year-btn {
   background-color: #eceff1;
   width: 2rem;
   height: 2rem;
@@ -293,11 +293,11 @@
 }
 
 .dark .journey__line,
-.dark .journey__year-shape {
+.dark .journey__year-btn {
   background-color: #37474f;
 }
 
-.journey__year-shape--active {
+.journey__year-btn--active {
   background-color: var(--text-color) !important;
 }
 
