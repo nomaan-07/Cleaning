@@ -285,13 +285,13 @@
     <div class="home__overlay"></div>
     <div class="container">
         <div class="home-wrapper">
-            <h1 class="home__title translateX-20">
+            <h1 class="home__title">
                 We clean your
                 <span class="home__words">
                     <span class="home__word">House</span>
                 </span>
             </h1>
-            <div class="home__btns translateX20 flex-center">
+            <div class="home__btns flex-center">
                 <a href="page-404.html" class="btn home__btn"><span>Introduction</span></a>
                 <a href="services.html" class="btn btn--secondary home__btn"><span>Services</span></a>
             </div>
@@ -307,31 +307,31 @@
     <div class="container">
         <div class="about-wrapper">
             <div class="about__content">
-                <h2 class="section__title about__title translateY-10">Efficient & Trustworthy Cleaning Services</h2>
-                <p class="about__caption translateY10">
+                <h2 class="section__title about__title">Efficient & Trustworthy Cleaning Services</h2>
+                <p class="about__caption">
                     Welcome to Cleaning, where our skilled team uses advanced technology to deliver a flawless, healthy space for your home or business. We prioritize cleanliness for both beauty and wellness.
                 </p>
             </div>
-            <div class="about__image translateX20">
+            <div class="about__image">
                 <img src="./images/male-wearing-apron-female-white-t-shirt-smiling-broadly-being-glad-clean.png" alt="about us">
             </div>
         </div>
         <div class="about-info">
-            <div class="about-info__box">
+            <div class="about-info__box"  data-aos="fade-right" data-aos-duration="1500">
                 <svg class="about-info__icon">
                     <use href="#map-pin"></use>
                 </svg>
                 <p class="about-info__title">Our Office</p>
                 <p class="about__contact">12604 Gusikowski Island, East Alicia, USA</p>
             </div>
-            <div class="about-info__box">
+            <div class="about-info__box"  data-aos="zoom-in" data-aos-duration="1500">
                 <svg class="about-info__icon">
                     <use href="#phone"></use>
                 </svg>
                 <p class="about-info__title">Phone Number</p>
                 <a href="tel: (785)203-7288" class="about__contact">(785) 203-7288</a>
             </div>
-            <div class="about-info__box">
+            <div class="about-info__box"  data-aos="fade-left" data-aos-duration="1500">
                 <svg class="about-info__icon">
                     <use href="#envelope"></use>
                 </svg>
@@ -343,7 +343,7 @@
 </section>
 
 <!-- offers -->
-<section class="offer translateY10">
+<section class="offer">
     <div class="container">
         <h2 class="section__title offer__title">Our Special Offers</h2>
         <div class="offer-wrapper">
@@ -472,7 +472,7 @@
 <section class="comments">
     <div class="container">
         <h2 class="section__title comments__title">Customers Opinion</h2>
-        <div class="swiper comments-wrapper translateX20">
+        <div class="swiper comments-wrapper">
             <div class="comments-wrapper__swiper swiper-wrapper">
                 <div class="comment swiper-slide">
                     <div class="comment-info">
@@ -651,7 +651,7 @@
 <section class="companies">
     <div class="container">
         <h2 class="section__title companies__title">Our Clients</h2>
-        <div class="companies__wrapper translateX-20">
+        <div class="companies__wrapper">
             <svg class="company">
                 <use href="#amazon"></use>
             </svg>
@@ -746,7 +746,9 @@
 <script src="./libs/swiper-bundle.min.js"></script>
 <!-- AOS -->
 <script src="./libs/aos.js"></script>
-<script src="./scripts/app.js"></script>
+<!-- app -->
+<script type="module" src="./scripts/app.js"></script>
+<!-- main -->
 <script src="./scripts/main.js"></script>
 
 </body>
