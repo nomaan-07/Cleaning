@@ -372,9 +372,8 @@
         <section class="discover">
             <div class="container">
                 <div class="discover__wrapper">
-                    <h1 class="home__title discover__title translateY-10">Our <span class="service-name">Factory
-                            Cleaning</span> Service</h1>
-                    <p class="discover__caption translateY10">Professional cleaning service tailored to your needs.</p>
+                    <h1 class="home__title discover__title" data-aos="fade-down" data-aos-duration="1500">Our <span class="service-name"></span> Service</h1>
+                    <p class="discover__caption" data-aos="fade-up" data-aos-duration="1500">Professional cleaning service tailored to your needs.</p>
                 </div>
             </div>
             <div class="home__overlay"></div>
@@ -383,7 +382,7 @@
         <section class="detail">
             <div class="container">
                 <div class="detail__wrapper">
-                    <div class="swiper detail-images translateX-20">
+                    <div class="swiper detail-images" data-aos="zoom-in" data-aos-duration="1500">
                         <div class="detail__navigation-btns">
                             <div class="detail__navigation-btn detail__navigation-btn--prev">
                                 <svg class="detail__navigation-icon">
@@ -398,7 +397,7 @@
                         </div>
                         <div class="detail__pagination"></div>
                     </div>
-                    <div class="detail-service translateX20">
+                    <div class="detail-service">
                         <div class="detail-service__btn btn">
                             <span class="detail-service__btn-text">Show more</span>
                             <div class="detail-service__icon-wrapper">
@@ -422,11 +421,11 @@
 
         <section class="book">
             <div class="container">
-                <h2 class="section__title book__title translateX-20">Book <span class="service-name"></span> Service
+                <h2 class="section__title book__title">Book <span class="service-name"></span> Service
                 </h2>
-                <p class="book__caption translateX20">Effortless Booking, Exceptional Cleaning.</p>
+                <p class="book__caption">Effortless Booking, Exceptional Cleaning.</p>
 
-                <form action="#" class="book__form translateX-20">
+                <form action="#" class="book__form">
                     <input type="hidden" id="service__hidden-input" name="service" value="">
                     <!-- name -->
                     <div class="input__full-section">
@@ -654,7 +653,9 @@
     <script src="./libs/swiper-bundle.min.js"></script>
     <!-- AOS -->
     <script src="./libs/aos.js"></script>
-    <script src="./scripts/app.js"></script>
+    <!-- app -->
+    <script type="module" src="./scripts/app.js"></script>
+    <!-- service -->
     <script src="./scripts/service.js"></script>
 
 </body>
