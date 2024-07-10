@@ -357,8 +357,8 @@
         <section class="discover">
             <div class="container">
                 <div class="discover__wrapper">
-                    <h1 class="home__title discover__title translateY-10">Contact Leaning</h1>
-                    <p class="discover__caption translateY10">Reach Out for Radiance We're Here to Make Your Space
+                    <h1 class="home__title discover__title" data-aos="fade-down" data-aos-duration="1500">Contact Leaning</h1>
+                    <p class="discover__caption" data-aos="fade-up" data-aos-duration="1500">Reach Out for Radiance We're Here to Make Your Space
                         Shine!</p>
                 </div>
             </div>
@@ -368,25 +368,25 @@
         <!-- Contact -->
         <section class="contact">
             <div class="container">
-                <h2 class="contact__title section__title translateX-20">Contact Us</h2>
-                <p class="contact__caption translateX20">Find Your Way to Cleanliness.</p>
+                <h2 class="contact__title section__title">Contact Us</h2>
+                <p class="contact__caption">Find Your Way to Cleanliness.</p>
                 <div class="contact__wrapper">
-                    <div class="contact__info translateX-20">
-                        <div class="contact__info-box">
+                    <div class="contact__info">
+                        <div class="contact__info-box" data-aos="fade-right" data-aos-duration="1500">
                             <svg class="about-info__icon">
                                 <use href="#map-pin"></use>
                             </svg>
                             <p class="about-info__title">Our Office</p>
                             <p class="about__contact">12604 Gusikowski Island, East Alicia, USA</p>
                         </div>
-                        <div class="contact__info-box">
+                        <div class="contact__info-box" data-aos="fade-left" data-aos-duration="1500">
                             <svg class="about-info__icon">
                                 <use href="#phone"></use>
                             </svg>
                             <p class="about-info__title">Phone Number</p>
                             <a href="tel: (785)203-7288" class="about__contact">(785) 203-7288</a>
                         </div>
-                        <div class="contact__info-box">
+                        <div class="contact__info-box" data-aos="fade-right" data-aos-duration="1500">
                             <svg class="about-info__icon">
                                 <use href="#envelope"></use>
                             </svg>
@@ -394,7 +394,7 @@
                             <a href="mailto:cleaning@ompany.com" class="about__contact">cleaning@ompany.com</a>
                         </div>
                     </div>
-                    <div class="contact-img__wrapper translateX20">
+                    <div class="contact-img__wrapper">
                         <svg class="contact-img__icon">
                             <use href="#map-pin"></use>
                         </svg>
@@ -407,10 +407,10 @@
         <!-- Contact-Form -->
         <section class="contact-form">
             <div class="container">
-                <h2 class="contact-form__title section__title translateX-20">Get in Touch</h2>
-                <p class="contact-form__caption translateX20">Have a question or need assistance? We're here to help.
+                <h2 class="contact-form__title section__title">Get in Touch</h2>
+                <p class="contact-form__caption">Have a question or need assistance? We're here to help.
                 </p>
-                <form action="#" class="contact__form translateX-20">
+                <form action="#" class="contact__form">
                     <!-- name -->
                     <div class="input__full-section">
                         <div class="input__section input__section--half">
@@ -559,7 +559,9 @@
 
     <!-- AOS -->
     <script src="./libs/aos.js"></script>
-    <script src="./scripts/app.js"></script>
+    <!-- app -->
+    <script type="module" src="./scripts/app.js"></script>
+    <!-- contact -->
     <script src="./scripts/contact.js"></script>
 </body>
 
