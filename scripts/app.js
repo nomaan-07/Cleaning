@@ -1,3 +1,5 @@
+import './utilities.js'
+
 const allElements = document.querySelectorAll("*");
 const header = document.querySelector(".header");
 const headerLogoPictures = document.querySelectorAll(".header__logo-picture");
