@@ -8,6 +8,8 @@ Welcome to the **Cleaning** website! This project showcases my web development s
 
 ![Logo](images/logos/cleaning-dark-logo.png)
 
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnomaan-07%2FCleaning&labelColor=%23d9e3f0&countColor=%232ccce4)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fnomaan-07%2FCleaning)
+
 ## Features ✨
 
 1. **Login and Signup**:
