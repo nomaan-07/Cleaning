@@ -51,3 +51,7 @@ Welcome to the **Cleaning** website! This project showcases my web development s
 
 - [Cleaning (github)](https://nomaan-07.github.io/Cleaning)
 - [Cleaning (liara)](https://cleaning.liara.run)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
